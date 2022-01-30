@@ -986,6 +986,10 @@ p,
     color: var(--white);
 
 }
+.cmn-btn-blue:hover,
+.cmn-btn-white :hover{
+    color:var(--white);
+}
 .btn-20{
     margin-top: 20px;
 }
