@@ -143,11 +143,7 @@
     margin-top: -30%;
     display: inline-block;
 }
-.focus-slider.owl-carousel .owl-item img {
-    display: block;
-    max-width: 100% !important;
-    width: auto;
-}
+
 .focus-slider.owl-theme .owl-dots .owl-dot span {
     width: 10px;
     height: 10px;
@@ -227,21 +223,45 @@
 /*
 
 ==========================================
-   01. header CSS
+   07. prjocect CSS
+==========================================
+*/
+.project-item.active.overlay3:after,
+.project-item.active .overlay-content,
+.project-item:hover.overlay3:after,
+.project-item:hover>.overlay-content {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* .project-item:hover>.overlay-content {
+    z-index: 5;
+} */
+/*
+==========================================
+   08. collabrator CSS
+==========================================
+*/
+.collaborator-slider.com-slider.owl-theme .owl-nav [class*=owl-] {
+    top: 20%;
+    color: var(--s-heading-color);
+    background-color: var(--white);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.collaborator-slider.com-slider .owl-nav button.owl-next {
+    right: -5.5%;
+}
+.collaborator-slider.com-slider .owl-nav button.owl-prev {
+    left:-5.5%;
+}
+/*
+==========================================
+   09. header CSS
 ==========================================
 */
 /*
 ==========================================
-   01. header CSS
-==========================================
-*/
-/*
-==========================================
-   01. header CSS
-==========================================
-*/
-/*
-==========================================
-   01. header CSS
+   10. header CSS
 ==========================================
 */

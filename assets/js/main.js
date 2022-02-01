@@ -58,7 +58,7 @@ $(document).ready(function($) {
             srcAction: 'iframe_src',
             }
         });
-           // Banner slider
+           // focusSlider 
         var $focusSlider = $(".focus-slider");
         $focusSlider.owlCarousel({
             loop: true,
@@ -68,17 +68,45 @@ $(document).ready(function($) {
             autoplay: true,
             margin: 30,
             responsive: {
+                0: {
+                    items: 1,
+                },
+                768: {
+                    items: 1,
+                },
+                992: {
+                    items: 1,
+                },
+                1399: {
+                    items: 1,
+                },
+            }
+        });
+           // collaborator-slider 
+        var $focusSlider = $(".collaborator-slider");
+        $focusSlider.owlCarousel({
+            loop: true,
+            nav: true,
+            navText: [
+            '<i class="fa fa-long-arrow-alt-left"></i>',
+            '<i class="fas fa-long-arrow-alt-right"></i>',
+            ],
+            dots: false,
+            autoplayTimeout:7000,
+            autoplay: true,
+            margin: 30,
+            responsive: {
             0: {
                 items: 1,
             },
             768: {
-                items: 1,
+                items: 3,
             },
             992: {
-                items: 1,
+                items: 5,
             },
             1399: {
-                items: 1,
+                items: 5,
             },
             }
         });
