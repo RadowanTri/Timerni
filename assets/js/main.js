@@ -22,8 +22,8 @@ $(document).ready(function($) {
             '<i class="fa fa-angle-right"></i>',
             ],
             dots: true,
-            // autoplayTimeout:7000,
-            // smartSpeed: 5000,
+            autoplayTimeout:7000,
+            smartSpeed: 5000,
             autoplay: false,
             margin: 30,
             responsive: {
