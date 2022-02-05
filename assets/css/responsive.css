@@ -52,6 +52,10 @@
         flex-basis: auto;
     }
 
+    .p-35 {
+        padding: 20px;
+    }
+
 }
 
 /* Mobile Layout: 320px. */

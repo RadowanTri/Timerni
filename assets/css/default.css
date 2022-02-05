@@ -28,10 +28,10 @@ Last change:    26/01/22 [fixed Float bug, vf]
     --title-color: #141313;
     --white:#fff;
     --text-color: #263238;
+    --light-b-color: #5F5757;
+    --yellow-color: #FFC444;
     --btn-color:#312783;
-    
-    
-    :#282626;
+    --paragraph-color:#282626;
     --border-color: #201f1f17;
     --back-bg:#E5E5E5;
     --gradient-color: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
@@ -137,6 +137,9 @@ ul {
 
 img {
     max-width: 100%;
+}
+.font-v {
+    font-family: 'Viaoda Libre', cursive !important;
 }
 
 p,
@@ -858,10 +861,13 @@ p,
 .pb-150 {
     padding-bottom: 150px;
 }
-
+.p-35{
+    padding: 35px;
+}
 .underline {
     text-decoration: underline;
 }
+
 
 /* section heading */
 
@@ -1036,6 +1042,9 @@ p,
     font-size: 12px;
     line-height: 1.2;
 }
+.light-t{
+    color: var(--light-b-color) !important;
+}
 
 /* font-family: 'Lato',sans-serif; */
 .toggle-none.dropdown-toggle::after {
@@ -1138,6 +1147,40 @@ p,
 .com-slider.owl-theme .owl-dots .owl-dot:hover span {
     background: var(--white);
 }
+
+/* grid */
+.grid-wrap {
+    grid-template-columns: repeat(12, 1fr);
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 20px;
+}
+
+.col-span-6 {
+    -ms-grid-column-span: 6;
+    grid-column: span 6;
+}
+
+.activaties-inner:nth-child(odd) .right-wrapper,
+.activaties-inner:nth-child(even) .right-wrapper {
+    right: 0;
+}
+
+.activaties-inner {
+    position: relative;
+    min-height: 400px;
+    padding: 6rem 0px;
+    display: flex;
+    align-items: center;
+}
+
+.right-wrapper {
+    position: absolute;
+    top: 3rem;
+    height: 100%;
+    right: 0;
+}
+
 .overlay::after,
 .overlay1::after,
 .overlay3::after {
@@ -1175,6 +1218,15 @@ p,
 .card_s > .c-title {
     padding-top: 20px;
     padding-bottom: 0px;
+}
+.profile-img > img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 .radious-icon {
     border: 3px solid var(--white);
@@ -1253,6 +1305,10 @@ p,
     transition: all .3s;
     font-size: 26px;
     
+}
+.star-icon i{
+    color: var(--yellow-color);
+    margin-right: 10px;
 }
 .icons-r i,
 .action-btn i{

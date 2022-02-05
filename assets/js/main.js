@@ -83,8 +83,8 @@ $(document).ready(function($) {
             }
         });
            // collaborator-slider 
-        var $focusSlider = $(".collaborator-slider");
-        $focusSlider.owlCarousel({
+        var $collaboratorSlider = $(".collaborator-slider");
+        $collaboratorSlider.owlCarousel({
             loop: true,
             nav: true,
             navText: [
@@ -110,6 +110,34 @@ $(document).ready(function($) {
             },
             }
         });
-
+       // testimonial-slider 
+        var $testimonialSlider = $(".testimonial-slider");
+        $testimonialSlider.owlCarousel({
+            loop: true,
+            nav: true,
+            navText: [
+            '<i class="fas fa-chevron-left"></i>',
+            '<i class="fas fa-chevron-right"></i>',
+            ],
+            dots: false,
+            autoplayTimeout:7000,
+            autoplay: true,
+            margin: 30,
+            responsive: {
+            0: {
+                items: 1,
+            },
+            768: {
+                items: 1,
+            },
+            992: {
+                items: 1,
+            },
+            1399: {
+                items: 2,
+            },
+   
+            }
+        });
 
 }(jQuery));
