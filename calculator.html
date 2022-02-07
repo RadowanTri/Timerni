@@ -1,0 +1,229 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Time research & innovation</title>
+    <meta name="description" content="research">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!--=== fontawesome-free-5.15.2 ===-->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!--=== Google Fonts ===-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600&family=Viaoda+Libre&display=swap"
+        rel="stylesheet">
+    <!--=== Animate ===-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!--=== Bootstrap 5 ===-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--=== Owl carousel 2.3.4===-->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+        <!--=== Magnific PopUp ===-->
+        <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <!--=== Main Css ===-->
+    <!-- <link rel="stylesheet" href="assets/css/default.css"> -->
+    <!--=== Style & Responsive  Css ===-->
+    <link rel="stylesheet" href="assets/css/style1.css">
+    <!--=== Responsive Css ===-->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    
+
+</head>
+<body>
+     
+    <div class="container">
+        <form action="" class="calculator" name="calc">
+            <input type="text" class="value" readonly name="txt">
+            <span class="num clear" onclick="calc.txt.value='' ">
+                <i>C</i>
+            </span>
+            <span class="num" onclick="calc.txt.value+='/' ">
+                <i>/</i>
+            </span>
+            <span class="num" onclick="calc.txt.value+='*' ">
+                <i>*</i>
+            </span> 
+            <span class="num" onclick="calc.txt.value+='7' ">
+                <i>7</i>
+            </span> 
+            <span class="num" onclick="calc.txt.value+='8' ">
+                <i>8</i>
+            </span> 
+            <span class="num" onclick="calc.txt.value+='9' ">
+                <i>9</i>
+            </span> 
+            <span class="num" onclick="calc.txt.value+='-' ">
+                <i>-</i>
+            </span> 
+            
+            <span class="num" onclick="calc.txt.value+='4' ">
+                <i>4</i>
+            </span> 
+            <span class="num" onclick="calc.txt.value+='5' ">
+                <i>5</i>
+            </span> 
+            <span class="num" onclick="calc.txt.value+='6' ">
+                <i>6</i>
+            </span> 
+            <span class="num plus" onclick="calc.txt.value+='+' ">
+                <i>+</i>
+            </span> 
+            <span class="num" onclick="calc.txt.value+='1' ">
+                <i>1</i>
+            </span> 
+            <span class="num" onclick="calc.txt.value+='2' ">
+                <i>2</i>
+            </span> 
+            <span class="num" onclick="calc.txt.value+='3' ">
+                <i>3</i>
+            </span> 
+            <span class="num" onclick="calc.txt.value+='0' ">
+                <i>0</i>
+            </span> 
+            <span class="num" onclick="calc.txt.value+='00' ">
+                <i>00</i>
+            </span> 
+            <span class="num" onclick="calc.txt.value+='00' ">
+                <i>.</i>
+            </span> 
+
+            <span class="num equal" onclick="document.calc.txt.value=eval(calc.txt.value)">
+                <i>=</i>
+
+            </span>
+            
+        </form>
+    </div>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #333;
+            min-height: 100vh;
+        }
+        .container{
+            position: relative;
+            min-height: 400px;
+            min-width: 400px;
+            width: 450px;
+            background: #333;
+            padding: 40px 30px 30px;
+            box-shadow: 25px 25px 75px rgba(0,0,0,0.25),
+            10px 10px 70px rgba(0,0,0,0.25),
+            inset -5px -5px 15px rgba(0,0,0,0.5),
+            inset 5px 5px 5px rgba(0,0,0,0.5);
+            border-radius: 20px;
+        }
+        .calculator{
+            position: relative;
+            display: grid;
+        }
+        .calculator .value{
+             position: relative;
+             grid-column: span 4;
+             height: 100px;
+             border:none;
+             outline: none;
+             background: #a7af7c;
+             margin-bottom: 10px;
+             border-radius: 10px;
+             padding: 10px;
+             font-size: 1.5em;
+             text-align: right;
+             box-shadow: 0px 0px 0px 2px rgba(0,0,0,0.75);
+        }
+        .calculator span{
+            position: relative;
+            display: grid;
+            place-items: center;
+            width: 80px;
+            height: 80px;
+            margin: 8px;
+            background: linear-gradient(180deg, #2f2f2f, #3f3f3f);
+            box-shadow: inset -8px 0px 8px rgba(0,0,0,0.15),
+            inset 0px -8px 8px rgba(0,0,0,0.25),
+            0 0 0 2px rgba(0,0,0,0.75),
+            10px 20px 25px rgba(0,0,0,0.4);
+            color: white;
+            user-select: none;
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: 400;
+            border-radius: 10px;
+        }
+        .calculator span i{
+            position: relative;
+            font-weight: normal;
+            font-size: 1.5em;
+            text-transform: uppercase;
+             
+        }
+
+        .calculator span::before{
+             content: '';
+             position: absolute;
+             background: linear-gradient(90deg, #2d2d2d, #4d4d4d);
+             left: 4px;
+             top: 3px;
+             bottom: 14px;
+             right: 12px;
+             right: 12px;
+             border-radius: 10px;
+             box-shadow: -5px -5px 15px rgba(0,0,0,0.1),
+             10px 5px 10px rgba(0,0,0,0.15);
+             border-left: 1px solid #0004;
+             border-bottom: 1px solid #004;
+             border-top: 1px solid #0009 ;
+
+            }
+
+            .calculator span:active{
+                filter: brightness(1.5);
+            }
+           .calculator .clear{ 
+               grid-column: span 2;
+               width: 180px;
+               background: red;
+            }
+            .calculator .clear::before{ 
+                content: "";
+                background: linear-gradient(90deg, #d20000, #ffffff5c);
+            border-left: 1px solid #fff4;
+             border-bottom: 1px solid #fff4;
+             border-top: 1px solid #fff4 ;
+            }
+           
+
+            .calculator .plus{
+                grid-row: span 2;
+                height: 170px;
+            }
+
+            .calculator .equal{ 
+                background: #2196f3;
+            }
+
+            .calculator .equal::before{ 
+                content: "";
+                background: linear-gradient(90deg, #1d79c9, #ffffff5c);
+            border-left: 1px solid #fff4;
+             border-bottom: 1px solid #fff4;
+             border-top: 1px solid #fff4 ;
+            }
+
+    </style>
+</body>
+
+</html>

@@ -47,11 +47,6 @@
    
 }
 
-
-
-/* .header-area .navbar-nav .nav-link.active {
-    color: var(--s-green-color);
-} */
 .header-area .login{
     padding:0px 28px;
 }
@@ -390,24 +385,29 @@
     position: absolute;
     top: 0rem;
     height: 100%;
-    transform: translateY(20%);
+    transform: translateY(15%);
     right: 2%;
+    -webkit-transform: translateY(15%);
+    -moz-transform: translateY(15%);
+    -ms-transform: translateY(15%);
+    -o-transform: translateY(15%);
 }
 .testimonial .testimonial-slider.owl-carousel .profile-img>img {
     max-width: 80px;
 }
 .testimonial-slider.com-slider.owl-theme .owl-nav [class*=owl-] {
+    top: 55%;
    background: #FFFFFF;
    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
     color: var(--s-primary-color);
 }
 .testimonial-slider.com-slider .owl-nav button.owl-next {
     right: auto;
-    left: -40%;
+    left: calc(-42% - -8px);
 }
 .testimonial-slider.com-slider .owl-nav button.owl-prev {
     right: auto;
-    left: -50.5%;
+    left: -50%;
 }
 /*
 ==========================================
@@ -446,14 +446,114 @@
 .faq .accordion-button:not(.collapsed) {
     color:var(--s-primary-color);
     background-color:#F8F8F8;
-    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+    box-shadow: none;
+    /* box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%); */
 }
+
+.faq .accordion-item {
+    border: none;
+    background-color: #F8F8F8;
+    margin-bottom: 20px;
+    padding: 8px 66px;
+}
+/* .faq .accordion-item .accordion-header {
+    margin-bottom: 20px;
+} */
 
 /*
 ==========================================
-   13. header CSS
+   13. footer CSS
 ==========================================
 */
+.footer{
+    position: relative;
+    background-color:var(--footer-bg);
+    padding-top: 80px;
+    margin-top: 80px;
+}
+.footer .fo-con {
+    padding: 15px 0px 20px;
+}
+.footer .f-s-icon{
+    display: flex;
+}
+.footer .f-s-icon > a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    margin-right: 25px;
+}
+.footer .f-s-icon>a:nth-last-child(1){
+    background: #2F80EC;
+}
+.footer .f-s-icon>a:nth-last-child(2){
+    background: #61CFF3;
+
+}
+.footer .f-s-icon>a:nth-last-child(3){
+    background: #2D9CDB;
+}
+.footer .f-s-icon>a:nth-last-child(4){
+    background: #E9455A;
+}
+
+.footer .copyright{
+    padding: 25px 0px 50px;
+}
+.footer .f-bottom-img img {
+    width: 100%;
+}
+.footer .f-link-h> .s-sub-heading {
+    font-family: 'Poppins',sans-serif;
+    text-align: left;
+}
+.footer .f-link-h>.s-sub-heading span.s-sub-c {
+    border-left: 2px solid;
+    border-width: 3px;
+    padding-left: 5px;
+}
+.footer .f-link-h> ul li {
+   padding-bottom: 15px;
+}
+.footer .f-link-h> ul li > a{
+   color: var(--paragraph-color);
+   letter-spacing: 0.08em;
+   font-weight: 400;
+   font-size: 18px;
+}
+.footer p,
+.footer .f-icons-f a,
+.footer .copyright p > a {
+    font-weight: 400;
+    color: var(--paragraph-color);
+    letter-spacing: 0.08em;
+}
+.footer .f-link-h .f-icons-f {
+   display: flex;
+   padding-bottom: 15px;
+}
+.footer .f-link-h .f-icons-f > img{
+      width: 18px;
+      height: 18px;
+      margin-right: 6px;
+      margin-top: 3px;
+}
+.footer .f-link {
+    display: flex;
+    justify-content: space-between;
+}
+.footer .subs-d{
+    display: flex;
+    gap: 20px;
+}
+.footer .subs-d > input[type=email] {
+    border-radius: 10px;
+}
+
 /*
 ==========================================
    14. header CSS
