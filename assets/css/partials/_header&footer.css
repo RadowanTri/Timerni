@@ -1,0 +1,245 @@
+/*
+==========================================
+   01. header CSS
+==========================================
+*/
+/* .nav-fixed {
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 3px 5px rgb(99 102 241 / 4%);
+    box-shadow: 0px 3px 5px rgb(99 102 241 / 4%);
+    padding: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+} */
+
+.header-area {
+    position: sticky;
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    padding: 10px 0px;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 3px 5px rgb(99 102 241 / 4%);
+    box-shadow: 0px 3px 5px rgb(99 102 241 / 4%);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.header-area .navbar-brand>img {
+    height: 65px;
+}
+
+.header-area .navbar .navbar-nav .nav-item {
+    padding-right: 25px;
+}
+
+.header-area .navbar .navbar-nav .nav-item:last-child {
+    padding-right: 0px;
+}
+
+.header-area .navbar-nav .nav-link,
+.header-area .login>a,
+.header-area a {
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--s-primary-color);
+    padding: 0px;
+
+}
+
+
+
+/* .header-area .navbar-nav .nav-link.active {
+    color: var(--s-green-color);
+} */
+.header-area .login {
+    padding: 0px 28px;
+}
+
+.header-area .flag-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-area .flag-logo>i {
+    margin-left: 10px;
+}
+
+
+/*
+==========================================
+   13. footer CSS
+==========================================
+*/
+.footer {
+    position: relative;
+    background-color: var(--footer-bg);
+    padding-top: 80px;
+    margin-top: 80px;
+}
+
+.footer .fo-con {
+    padding: 15px 0px 20px;
+}
+
+.footer .f-s-icon {
+    display: flex;
+}
+
+.footer .f-s-icon>a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    margin-right: 25px;
+}
+
+.footer .f-s-icon>a:nth-last-child(1) {
+    background: #2F80EC;
+}
+
+.footer .f-s-icon>a:nth-last-child(2) {
+    background: #61CFF3;
+
+}
+
+.footer .f-s-icon>a:nth-last-child(3) {
+    background: #2D9CDB;
+}
+
+.footer .f-s-icon>a:nth-last-child(4) {
+    background: #E9455A;
+}
+
+.footer .copyright {
+    padding: 25px 0px 50px;
+}
+
+.footer .f-bottom-img img {
+    width: 100%;
+}
+
+.footer .f-link-h>.s-sub-heading {
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+}
+
+.footer .f-link-h>.s-sub-heading span.s-sub-c {
+    border-left: 2px solid;
+    border-width: 3px;
+    padding-left: 5px;
+}
+
+.footer .f-link-h>ul li {
+    padding-bottom: 15px;
+}
+
+.footer .f-link-h>ul li>a {
+    color: var(--paragraph-color);
+    letter-spacing: 0.08em;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.footer p,
+.footer .f-icons-f a,
+.footer .copyright p>a {
+    font-weight: 400;
+    color: var(--paragraph-color);
+    letter-spacing: 0.08em;
+}
+
+.footer .f-link-h .f-icons-f {
+    display: flex;
+    padding-bottom: 15px;
+}
+
+.footer .f-link-h .f-icons-f>img {
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+    margin-top: 3px;
+}
+
+.footer .f-link {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .subs-d {
+    display: flex;
+    gap: 20px;
+}
+
+.footer .subs-d>input[type=email] {
+    border-radius: 10px;
+}
+
+
+/* Responsive  */
+
+@media (min-width: 1200px) and (max-width: 1600px) {}
+
+
+/* Medium Layout: 1280px. */
+
+@media (min-width: 992px) and (max-width: 1200px) {}
+
+
+/* Tablet Layout: 768px. */
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+@media (min-width: 320px) and (max-width: 991px) {
+    .header-area .navbar-toggler[aria-expanded="true"] .fa-bars {
+        display: none;
+    }
+    .header-area .navbar-toggler[aria-expanded="false"] .fa-bars {
+        display: block;
+    }
+
+    .header-area .navbar-toggler[aria-expanded="true"] .fa-times {
+        display: block;
+    }
+
+    .header-area .navbar-toggler[aria-expanded="false"] .fa-times {
+        display: none;
+    }
+    .header-area .navbar-toggler:focus {
+        outline-style: dotted;
+        outline-width: thin;
+    }
+    .header-area .navbar-toggler {
+        width: 2rem;
+        height: 2rem;
+        background: transparent;
+        color: #000;
+        border-radius: 100%;
+        border: 1px solid #000;
+        margin: 10px 15px;
+        padding: 0px;
+
+    }
+    .header-area .navbar-toggler:focus {
+        text-decoration: none;
+        outline: 0;
+        box-shadow: 0 0 0 0rem;
+    }
+
+}
+
+/* Mobile Layout: 320px. */
+
+@media (max-width: 767px) {}
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media (min-width: 320px) and (max-width: 575px) {}
