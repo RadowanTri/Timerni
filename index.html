@@ -62,13 +62,43 @@
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contact Us</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="career.html">Career</a>
+                        <li class="nav-item pb-d-0">
+                           <div class="dropdown">
+                               <a href="#" class="nav-link  toggle-none dropdown-toggle"
+                                   id="dropdownMenuButton1"
+                                   data-bs-toggle="dropdown" aria-expanded="false">
+                                   
+                                   <span class="me-2">Career</span>
+                                   <i class="fas fa-chevron-down"></i>
+                               </a>
+                               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                   <li class="nav-items">
+                                       <a class="nav-link dropdown-item" href="job.html">
+                                          <i class="fas fa-chevron-right"></i>
+                                          <span class="ms-2">Job</span>
+                                       </a>
+                                   </li>
+                                   <li class="nav-items">
+                                       <a class="nav-link dropdown-item" href="ambassador.html">
+                                           <i class="fas fa-chevron-right"></i>
+                                           <span class="ms-2">Ambassador</span>
+                                       </a>
+                                   </li>
+                                   <li class="nav-items">
+                                       <a class="nav-link dropdown-item" href="cv.html">
+                                           
+                                           <i class="fas fa-chevron-right"></i>
+                                           <span class="ms-2">CV Clinic</span>
+                                       </a>
+                                   </li>
+                               </ul>
+                              
+                           </div>
                         </li>
        
                     </ul>
                     <form class="d-flex align-items-center">
-                        <div class="form-inline">
+                        <div class="form-inline d-none d-lg-block">
                             <a href="#" class="top-search">
                                 <i class="fas fa-search"></i>
                             </a>
@@ -78,7 +108,7 @@
                                 login
                             </a>
                         </div>
-                        <div class="dropdown">
+                        <div class="dropdown d-none d-lg-block">
                             <a href="#" class="flag-logo toggle-none dropdown-toggle" id="dropdownMenuButton1"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 <img src="assets/img/icons/flag.png" alt="flag">
