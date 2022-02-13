@@ -1376,6 +1376,7 @@ p,
 .focus-slider.owl-carousel .owl-item img {
     max-width: 100%;
     width: auto;
+    margin: 0 auto;
 }
 
 
@@ -1506,6 +1507,11 @@ button.btn1::after {
 .header-area .navbar-nav ul.dropdown-menu .nav-items:last-child .nav-link {
     border: none;
 }
+.header-area .navbar .nav-item ul.dropdown-menu .dropdown-item.active,
+.header-area .navbar .nav-item ul.dropdown-menu .dropdown-item:focus,
+.header-area .navbar .nav-item ul.dropdown-menu .dropdown-item:hover {
+    background-color: transparent;
+}
 .header-area .navbar-nav .nav-link.active,
 .header-area .navbar-nav .nav-link:focus,
 .header-area .navbar-nav .nav-link:hover,
@@ -1533,22 +1539,21 @@ button.btn1::after {
     padding: 15px 0px 20px;
 }
 
-.footer .f-s-icon {
-    display: flex;
-}
+
 
 .footer .f-s-icon>a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
+    text-align: center;
     width: 56px;
     height: 56px;
+    line-height: 56px;
     border-radius: 50%;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
     margin-right: 25px;
 }
 
 .footer .f-s-icon>a:nth-last-child(1) {
+    margin-right: 0px;
     background: #2F80EC;
 }
 
@@ -1563,6 +1568,7 @@ button.btn1::after {
 
 .footer .f-s-icon>a:nth-last-child(4) {
     background: #E9455A;
+
 }
 
 .footer .copyright {
@@ -1617,6 +1623,7 @@ button.btn1::after {
 
 .footer .f-link {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -1627,6 +1634,8 @@ button.btn1::after {
 
 .footer .subs-d>input[type=email] {
     border-radius: 10px;
+    font-size: 14px;
+    font-weight: 300;
 }
 .footer-l{
     position: relative;
@@ -1651,7 +1660,23 @@ button.btn1::after {
 
 /* Medium Layout: 1280px. */
 
-@media (min-width: 992px) and (max-width: 1200px) {}
+@media (min-width: 992px) and (max-width: 1200px) {
+    .header-area .navbar .navbar-nav .nav-item {
+        padding-right: 17px;
+    }
+    .header-area .login {
+        padding: 0px 16px;
+    }
+
+
+    /* footer */
+     .footer-l{
+         text-align: center;
+     }
+    .footer-l::before {
+        left: 0%;
+    }
+}
 
 
 /* Tablet Layout: 768px. */
@@ -1703,11 +1728,7 @@ button.btn1::after {
         border-top: 1px solid var(--s-primary-color);
         padding-left: 35px;
     }
-     .header-area .navbar .nav-item ul.dropdown-menu .dropdown-item.active,
-     .header-area .navbar .nav-item ul.dropdown-menu .dropdown-item:focus,
-     .header-area .navbar .nav-item ul.dropdown-menu .dropdown-item:hover {
-        background-color:transparent;
-    }
+
     .header-area .login {
         padding: 0px 0px;
     }
@@ -1734,7 +1755,8 @@ button.btn1::after {
         display:block;
         padding: 10px 0px;
         transition: all 0.3s ease 0s;
-}
+        font-size: 14px;
+    }
     .header-area .navbar-nav ul.dropdown-menu .nav-link {
         padding: 10px 0px;
     }
@@ -1746,7 +1768,7 @@ button.btn1::after {
         border-bottom: 1px solid var(--s-primary-color);
     }
     .header-area .navbar-nav ul.dropdown-menu .nav-link,
-   .header-area .navbar .navbar-nav .nav-item .dropdown-menu {
+    .header-area .navbar .navbar-nav .nav-item .dropdown-menu {
         border: none;
     }
 
@@ -1769,11 +1791,74 @@ button.btn1::after {
         height: 45px;
     }
 
+
+
+
+    /* footer */
+    .footer .f-link-h{
+        margin-top: 25px;
+    }
+   .footer .f-link .mt-60 {
+        margin-top: 20px;
+    }
+    .footer {
+        margin-top: 30px;
+    }
+
+    .footer-l::before {
+        top: -20%;
+        left: 0%;
+        background-size: contain;
+        height: 135%;
+        background-repeat: no-repeat;
+        z-index: -1;
+        background-position: bottom center;
+    }
+
 }
 
 /* Mobile Layout: 320px. */
 
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+
+     .header-area .navbar-nav .nav-link,
+     .header-area .login>a,
+     .header-area a {
+         font-size: 12px;
+     }
+
+     /* footer */
+     .footer .subs-d {
+         gap: 15px;
+     }
+
+     .footer-l{
+         text-align: center;
+         margin-bottom: 30px;
+     }
+     
+   
+    .footer p,
+    .footer .f-icons-f a,
+    .footer .copyright p>a {
+        font-size: 12px;
+    }
+    .footer .f-link-h>ul li>a {
+        font-weight: 300;
+        font-size: 16px;
+    }
+    .footer .f-link-h>ul li {
+        padding-bottom: 7px;
+    }
+    .footer .subscribes-f .s-sub-heading,
+    .footer .f-link-h>.s-sub-heading {
+        font-size: 18px;
+    }
+    .footer .subscribes-f  .cmn-btn-blue {
+        font-weight: 300;
+        font-size: 18px;
+    }
+}
 
 
 /* Wide Mobile Layout: 480px. */

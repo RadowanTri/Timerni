@@ -97,7 +97,7 @@ $(document).ready(function($) {
             margin: 30,
             responsive: {
             0: {
-                items: 1,
+                items: 2,
             },
             768: {
                 items: 3,
@@ -113,7 +113,7 @@ $(document).ready(function($) {
        // testimonial-slider 
         var $testimonialSlider = $(".testimonial-slider");
         $testimonialSlider.owlCarousel({
-            loop: true,
+            loop: false,
             nav: true,
             navText: [
             '<i class="fas fa-chevron-left"></i>',
