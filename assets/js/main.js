@@ -121,7 +121,7 @@ $(document).ready(function($) {
             ],
             dots: false,
             autoplayTimeout:7000,
-            autoplay: true,
+            autoplay: false,
             margin: 30,
             responsive: {
             0: {
