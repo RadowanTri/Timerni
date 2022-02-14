@@ -185,7 +185,7 @@
         font-size: 12px;
     }
     /* testimonial */
-    /* .testimonial .testimonial-slider.owl-carousel {
+    .testimonial .testimonial-slider.owl-carousel {
         width: 100%;
         z-index: 1;
         position: relative;
@@ -229,7 +229,7 @@
          left: auto;
          height: 70%;
          top: 27%;
-     } */
+     }
     
 }
 
