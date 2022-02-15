@@ -368,7 +368,7 @@
 
 .testimonial-slider.com-slider .owl-nav button.owl-prev {
     right: auto;
-    left:calc(-42% - -8px);
+    left: -50%;
 }
 
 /*

@@ -886,6 +886,10 @@ p,
     line-height: 30px;
     text-align: center;
     color: var(--s-primary-color);
+    text-transform: lowercase;
+}
+.s-sub-heading::first-letter{
+    text-transform: uppercase;
 }
 .s-sub-c{
     color: var(--s-green-color);

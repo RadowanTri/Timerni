@@ -22,7 +22,10 @@
 /* Tablet Layout: 768px. */
 
 @media (min-width: 768px) and (max-width: 991px) {
-  
+      .testimonial-slider.com-slider .owl-nav button.owl-next {
+          right: auto;
+          left: calc(-40% - -8px);
+      }
 }
 @media (min-width: 320px) and (max-width: 991px) {
 
@@ -105,18 +108,13 @@
 
     /* focus point*/
     .focus-items>.focus-popup {
-        margin-right: -10%;
+        margin-right: 0%;
     }
-      /* testimonial-slider */
-      .testimonial-slider.com-slider .owl-nav button.owl-next {
-          right: auto;
-          left:0;
-      }
-      
-     .testimonial-slider.com-slider.owl-theme .owl-nav [class*=owl-] {
-          position: relative;
+     .focus-items .pop_up_item img{
+         max-width: 250px;
+     }
 
-      }
+
     /* faq */
     .faq .accordion-item {
         margin-bottom: 15px;
@@ -135,7 +133,57 @@
     .cmn-btn-blue {
        font-size: 12px;
     }
+    /* testimonial */
+    .testimonial .testimonial-slider.owl-carousel {
+        width: 100%;
+        z-index: 1;
+        position: relative;
+        transform: translateY(0%);
+    }
 
+    .testimonial .activaties-inner {
+        position: relative;
+        min-height: auto;
+        padding: 2rem 15px;
+        flex-direction: column;
+    }
+
+    .testimonial>.overlay::after {
+        width: 100%;
+        right: 0;
+        left: auto;
+    }
+
+    .testimonial-slider.com-slider .owl-nav button.owl-next {
+        right: auto;
+        left: 0;
+    }
+
+    .testimonial-slider.com-slider .owl-nav button.owl-prev {
+        right: auto;
+        left: 0%;
+    }
+
+
+    .testimonial-slider.com-slider.owl-theme .owl-nav [class*=owl-] {
+        position: relative;
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    .testimonial .testimonial-slider.owl-carousel {
+        right: 0%;
+        margin-top: 30px;
+
+    }
+
+    .testimonial>.overlay::after {
+        width: 100%;
+        right: 0;
+        left: auto;
+        height: 70%;
+        top: 27%;
+    }
   
    
     
@@ -166,6 +214,12 @@
 
 
 @media (min-width: 320px) and (max-width: 575px) {
+
+    .focus-slider.owl-carousel .owl-item img {
+        max-width: 100%;
+        width: 310px;
+        margin: 0 auto;
+    }
     /* collaborator-slider */
     .collaborator-slider.com-slider .owl-nav button.owl-next {
         right: 0%;
