@@ -293,7 +293,10 @@
     position: relative;
     display: inline-block;
     border-radius: 10px;
+}
 
+.news .news-content .icons-r {
+    top: -45px;
 }
 
 /* .news-items:hover {
