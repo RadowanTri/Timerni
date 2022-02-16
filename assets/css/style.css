@@ -73,6 +73,13 @@
     display: inline-block;
     position: relative;
 }
+.focus-slider.owl-carousel .owl-item img {
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
 
 .focus-items .video-p {
     display: inline-block;
@@ -84,11 +91,14 @@
 
 .focus-items>.focus-popup {
     position: relative;
-    margin-right: -25%;
+    margin-right: -15%;
     margin-top: -30%;
     display: inline-block;
 }
-
+.focus-items>.focus-popup .pop_up_item img {
+    max-width: 300px !important;
+    border-radius: 7px;
+}
 .focus-slider.owl-theme .owl-dots .owl-dot span {
     width: 10px;
     height: 10px;
@@ -273,6 +283,7 @@
 .news-items {
     transition: all .3s;
     overflow: hidden;
+    position: relative;
 
 }
 

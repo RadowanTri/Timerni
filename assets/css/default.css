@@ -1297,6 +1297,12 @@ p,
     transition: all .3s;
     overflow: hidden;
 }
+.icons-r  {
+      position: absolute;
+      right: 0px;
+      top: -15%;
+      z-index: 1
+}
 .icons-r a {
     background: var(--paragraph-color);
     border-radius: 10px;
@@ -1307,10 +1313,7 @@ p,
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    right: 0px;
-    top: -22%;
-    z-index: 1;
+  
 }
 .action-btn {
     position: absolute;
