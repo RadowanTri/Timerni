@@ -1,4 +1,7 @@
+/* css variables */
 
+@import url(../css/partials/_header&footer.css);
+@import url(../css/partials/_default.css);
 
 /*
 ==========================================
@@ -19,6 +22,7 @@
    04. mission CSS
 ==========================================
 */
+
 .mission .card_s>p i {
     color: var(--s-green-color);
     font-size: 20px;
@@ -57,6 +61,7 @@
     margin-top: 30px;
 }
 
+
 /*
 ==========================================
    05. focus CSS
@@ -69,10 +74,6 @@
     display: inline-block;
 }
 
-.focus-items .pop_up_item {
-    display: inline-block;
-    position: relative;
-}
 .focus-slider.owl-carousel .owl-item img {
     border-radius: 7px;
     -webkit-border-radius: 7px;
@@ -81,24 +82,13 @@
     -o-border-radius: 7px;
 }
 
-.focus-items .video-p {
-    display: inline-block;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
 .focus-items>.focus-popup {
     position: relative;
-    margin-right: -15%;
+    margin-right: -10%;
     margin-top: -30%;
     display: inline-block;
 }
-.focus-items>.focus-popup .pop_up_item img {
-    max-width: 300px !important;
-    border-radius: 7px;
-}
+
 .focus-slider.owl-theme .owl-dots .owl-dot span {
     width: 10px;
     height: 10px;
@@ -127,6 +117,7 @@
    06. service CSS
 ==========================================
 */
+
 .service .dots-img {
     position: absolute;
     left: 0;
@@ -157,7 +148,6 @@
     justify-content: center;
     padding: 20px 15px;
     flex-direction: column;
-
 }
 
 .service-item .service-content>.c-title {
@@ -179,12 +169,14 @@
     -o-border-radius: 10px;
 }
 
+
 /*
 
 ==========================================
    07. prjocect CSS
 ==========================================
 */
+
 .project-item.active.overlay3:after,
 .project-item.active .overlay-content,
 .project-item:hover.overlay3:after,
@@ -193,14 +185,18 @@
     opacity: 1;
 }
 
+
 /* .project-item:hover>.overlay-content {
     z-index: 5;
 } */
+
+
 /*
 ==========================================
    08. collabrator CSS
 ==========================================
 */
+
 .collaborator-slider.com-slider.owl-theme .owl-nav [class*=owl-] {
     top: 20%;
     color: var(--s-primary-color);
@@ -216,11 +212,13 @@
     left: -5.5%;
 }
 
+
 /*
 ==========================================
    09. team member CSS
 ==========================================
 */
+
 .team-member .team-select {
     background-color: var(--s-primary-color);
     color: var(--white);
@@ -235,12 +233,12 @@
 }
 
 
-
 /*
 ==========================================
    10. news CSS
 ==========================================
 */
+
 .news-bg {
     background-repeat: no-repeat;
     width: 100%;
@@ -251,9 +249,11 @@
     padding: 80px 0px;
 }
 
+
 /* .news-bg .heading {
     display: inline-block;
 } */
+
 .news-bg .heading .s-heading {
     color: rgba(255, 255, 255, 0.5);
 }
@@ -261,7 +261,6 @@
 .news-bg .heading .s-sub-heading {
     color: var(--white);
 }
-
 
 .news .news-content {
     padding: 30px 40px;
@@ -271,20 +270,16 @@
     margin-top: -100px;
     position: relative;
     z-index: 55;
-
-
 }
 
 .news .news-content .text-truncate {
     white-space: normal;
 }
 
-
 .news-items {
     transition: all .3s;
     overflow: hidden;
     position: relative;
-
 }
 
 .news-wrapper-cont {
@@ -298,6 +293,7 @@
 .news .news-content .icons-r {
     top: -45px;
 }
+
 
 /* .news-items:hover {
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
@@ -328,11 +324,13 @@
     color: var(--s-green-color);
 }
 
+
 /*
 ==========================================
    11. testimonal CSS
 ==========================================
 */
+
 
 /* .collaborator-content .com-f > .c-title{
     color: var(--paragraph-color);
@@ -340,6 +338,7 @@
 .collaborator-content .com-f > p{
     color: #5F5757;
 } */
+
 .testimonial-c>p {
     padding: 15px 0px;
 }
@@ -384,6 +383,7 @@
     right: auto;
     left: -50%;
 }
+
 
 /*
 ==========================================
@@ -435,18 +435,149 @@
     padding: 8px 66px;
 }
 
+
 /* .faq .accordion-item .accordion-header {
     margin-bottom: 20px;
 } */
 
+
 /*
 ==========================================
-   14. header CSS
+   14. contact CSS
 ==========================================
 */
+
+.contact .con-contetnt h4 {
+    color: red;
+    padding-top: 15px;
+}
+
+.contact .contact-form {
+    background: var(--s-primary-color);
+    padding: 35px 25px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.contact .contact-form label {
+    margin-bottom: 0px;
+}
+
+.contact .contact-form label span {
+    color: red;
+    font-size: 18px;
+}
+
+.contact-form [class*=col-] {
+    margin-bottom: 20px;
+}
+
+.contact-form .form-control {
+    border: none;
+}
+
+
 /*
 ==========================================
    15. header CSS
 ==========================================
 */
 
+.social-login .f-s-icon>a {
+    display: inline-block;
+    text-align: center;
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+.social-login .f-s-icon>.so-f {
+    background: #2F80EC;
+}
+
+.social-login .f-s-icon>.so-t {
+    background: #61CFF3;
+}
+
+.social-login .f-s-icon>.so-l {
+    background: #2D9CDB;
+}
+
+.social-login .f-s-icon>.so-i {
+    background: #2D9CDB;
+}
+
+.social-login .f-s-icon>.so-g {
+    background: #E9455A;
+}
+
+.terms {
+    display: block;
+    margin-top: 15px;
+}
+
+.terms input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+}
+
+.terms label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 30px;
+    line-height: 23px;
+    color: var(--gray);
+}
+
+.terms label:before {
+    content: '';
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 2px solid var(--s-green-color);
+    box-shadow: 0 1px 2px rgb(0 0 0 / 5%), inset 0px -15px 10px -12px rgb(0 0 0 / 5%);
+    padding: 8px;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-left: -30px;
+    margin-right: 8px;
+    margin-top: 0px;
+}
+
+.terms input:checked+label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    width: 5px;
+    height: 10px;
+    border: solid var(--s-green-color);
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+form i {
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+.show-p .fa-eye {
+    float: right;
+    margin-right: 15px;
+    margin-top: -25px;
+    position: relative;
+    z-index: 2;
+}

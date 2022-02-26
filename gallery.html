@@ -12,18 +12,21 @@
     <link rel="stylesheet" href="assets/css/all.min.css">
     <!--=== Google Fonts ===-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <!--=== Bootstrap 5 ===-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!--=== Owl carousel 2.3.4===-->
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-        <!--=== Magnific PopUp ===-->
-        <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <!--=== Magnific PopUp ===-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
     <!--=== Main Css ===-->
     <link rel="stylesheet" href="assets/css/default.css">
     <!--=== Style & Responsive  Css ===-->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!--=== Style & Responsive  Css ===-->
+    <link rel="stylesheet" href="assets/css/service.css">
     <!--=== Responsive Css ===-->
     <link rel="stylesheet" href="assets/css/responsive.css">
 
@@ -32,918 +35,500 @@
 <body>
 
     <!-- header start -->
-    <header class="header-area">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="assets/img/logo/logo.png" alt="">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
-                    <i class="fas fa-times"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav m-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="services.html">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="project.html">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="testimonial.html">Testimonials</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="career.html">Career</a>
-                        </li>
-       
-                    </ul>
-                    <form class="d-flex align-items-center">
-                        <div class="form-inline">
-                            <a href="#" class="top-search">
-                                <i class="fas fa-search"></i>
-                            </a>
-                        </div>
-                        <div class="login">
-                            <a href="#">
-                                login
-                            </a>
-                        </div>
-                        <div class="dropdown">
-                            <a href="#" class="flag-logo toggle-none dropdown-toggle" id="dropdownMenuButton1"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="assets/img/icons/flag.png" alt="flag">
-                                <i class="fas fa-chevron-down"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        <img src="assets/img/icons/flag.png" alt="flag">
-                                    </a>
-                                </li>
+    <header id="header">
+        <div class="header-area">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/logo/f-logo.png" alt="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav m-auto">
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="services.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="project.html">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact Us</a>
+                            </li>
+                            <li class="nav-item pb-d-0">
+                                <div class="dropdown">
+                                    <a href="#" class="nav-link  toggle-none dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
 
-                            </ul>
-                        </div>
-                    </form>
+                                        <span class="me-2">Career</span>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li class="nav-items">
+                                            <a class="nav-link dropdown-item" href="job.html">
+                                                <i class="fas fa-chevron-right"></i>
+                                                <span class="ms-2">Job</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-items">
+                                            <a class="nav-link dropdown-item" href="ambassador.html">
+                                                <i class="fas fa-chevron-right"></i>
+                                                <span class="ms-2">Ambassador</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-items">
+                                            <a class="nav-link dropdown-item" href="cv.html">
+
+                                                <i class="fas fa-chevron-right"></i>
+                                                <span class="ms-2">CV Clinic</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+
+                        </ul>
+                        <form class="d-flex align-items-center">
+                            <div class="form-inline d-none d-lg-block">
+                                <a href="#" class="top-search">
+                                    <i class="fas fa-search"></i>
+                                </a>
+                            </div>
+                            <div class="login">
+                                <a href="#">
+                                    login
+                                </a>
+                            </div>
+                            <div class="dropdown d-none d-lg-block">
+                                <a href="#" class="flag-logo toggle-none dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="assets/img/icons/flag.png" alt="flag">
+                                    <i class="fas fa-chevron-down"></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="assets/img/icons/flag.png" alt="flag">
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
     <!-- header end -->
 
-    
-    <!-- banner-slider start -->
-    <section class=" home-slider com-slider  owl-carousel owl-theme">
-        <div class="banner com-banner  overlay" data-background="assets/img/slider/slider.png">
+    <main class="gallery-page">
+        <div class="page-heading">
             <div class="container">
-                <div class="banner-heading text-center"> 
-                    <h1 class="banner-title">
-                        <span>Welcome To</span>
-                        Time research & innovation
-                    </h1>
-                    <p class="t18 text-white">
-                        We are best in Research
-                    </p>
-                    <div class="learn-more btn-20">
-                        <a href="#" class="cmn-btn-white ">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </div> <!-- banner end -->
-        <div class="banner com-banner  overlay" data-background="assets/img/slider/slider.png">
-            <div class="container">
-                <div class="banner-heading text-center"> 
-                    <h1 class="banner-title">
-                        <span>Welcome To</span>
-                        Time research & innovation
-                    </h1>
-                    <p class="t18 text-white">
-                        We are best in Research
-                    </p>
-                    <div class="learn-more btn-20">
-                        <a href="#" class="cmn-btn-white ">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </div> <!-- banner end -->
-        <div class="banner com-banner  overlay" data-background="assets/img/slider/slider.png">
-            <div class="container">
-                <div class="banner-heading text-center"> 
-                    <h1 class="banner-title">
-                        <span>Welcome To</span>
-                        Time research & innovation
-                    </h1>
-                    <p class="t18 text-white">
-                        We are best in Research
-                    </p>
-                    <div class="learn-more btn-20">
-                        <a href="#" class="cmn-btn-white ">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </div> <!-- banner end -->
-    </section>
-    <!-- banner-slider end -->
-
-    <!-- about start -->
-    <section class="about sec-padding-top">
-        <div class="container">
-            <div class="heading">
-                <h2 class="s-heading">
-                    ABOUT US
-                </h2>
-                <h4 class="s-sub-heading">
-                    We Are Always <span class="s-sub-c"> Waiting For You</span>
-                </h4>
-            </div>
-            <div class="mt-15">
-                <div class="row">
-                    <div class="col-md-12 col-lg-6">
-                        <div class="about-img">
-                            <img src="assets/img/about.png" alt="about" loading="lazy">
-                        </div>
-                    </div>
-                    <div class="col-md-12 col-lg-6 d-xl-flex align-items-xl-center">
-                        <div class="abount-content">
-                            <p>
-                                Time research & innovation is a research organisation based in the United Kingdom and
-                                Bangladesh. We have started various research in behavioural computer sciences; technology,
-                                health informatics, education and community. Our supreme emphasis is to execute research,
-                                training and development activities initially in the UK and Bangladesh to help disadvantaged
-                                people. Our Chair and CEO Shah Siddiqui is currently working on ‘ANGTHAS’ an Artificial
-                                Intelligence and Machine Learning project as his PhD research at the University of
-                                Portsmouth, UK......
-                            </p>
-                            <div class="btn-20">
-                                <a href="#" class="cmn-btn-blue">Learn More</a>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    
+                <div class="heading">
+                    <h2 class="s-heading">
+                        OUR GALLERY
+                    </h2>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- about end -->
-
-    <!-- mission start -->
-    <section class="mission  pt-50">
-        
-        <div class="container position-relative">
-            <div class="text-end dots-img">
-                <img src="assets/img/icons/dots.png" alt="dots">
-            </div>
-
-            <div class="heading">
-                <h2 class="s-heading">
-                    Mission & Vission
-                </h2>
-                <h4 class="s-sub-heading">
-                    Our Main Target <span class="s-sub-c">To Do Something For World</span>
-                </h4>
-            </div> <!-- heading end -->
-            <div class="left-vect">
-                <div class="vector-1">
-                    <img src="assets/img/icons/vector1.png" alt="vector1">
-                </div>
-                <div class="vector-2">
-                    <img src="assets/img/icons/vector2.png" alt="vector2">
-                </div>
-            </div>
-            
-            <div class="mt-25">
-
-                <div class="right-vect">
-                    <div class="vector-5">
-                        <img src="assets/img/icons/vector5.png" alt="vector2">
-                    </div>
-                    <div class="vector-6">
-                        <img src="assets/img/icons/vector6.png" alt="vector2">
-                    </div>
-
-                </div>
-                
-                <div class="row justify-content-center">
-                    <div class="col-md-12 col-lg-5">
-                        <div class="vec-img text-center">
-                            <img src="assets/img/icons/vector3.png" loading="lazy" alt="vector3">
-                        </div>
-                        <div class="card_s box_shadow">
-                            <h3 class="title">Mission</h3>
-                            <p class="t18">
-                                <sup><i class="fas fa-quote-left"></i></sup> 
-                                Our mission is to educate and empower
-                                societies through research and developmentsup
-                                <sup><i class="fas fa-quote-right"></i></sub>
-                                </p>
-                        </div>
-                    </div>
-                    <div class="col-md-12 col-lg-5">
-                        
-                        <div class="card_s box_shadow">
-                            <h3 class="title">Vission</h3>
-                            <p class="t18">
-                                <sup><i class="fas fa-quote-left"></i></sup>
-                                Our vision is to place the environment in front of every technological invention to
-                                make the world a better and safer place for our future generation
-                                <sup><i class="fas fa-quote-right"></i></sub>
-                            </p>
-                        </div>
-                        <div class="vec-img text-center">
-                            <img src="assets/img/icons/vector4.png" loading="lazy" alt="vector4">
-                        </div>
-                    </div>
-
-                </div><!-- row end -->
-                <div class="text-start dots-img-3">
-                    <img src="assets/img/icons/dots.png" alt="dots">
-                </div>
-            </div> 
-        </div>
-    </section>
-    <!-- mission end -->
-
-    <!-- focus start -->
-    <section class="focus pt-50">
-        <div class="container">
-            <div class="heading">
-                <h2 class="s-heading">
-                    Focus Point
-                </h2>
-                <h4 class="s-sub-heading">
-                    We Are Always <span class="s-sub-c"> Waiting For You</span>
-                </h4>
-            </div>
-            <div class="mt-50">
-                <div class="focus-slider owl-carousel owl-theme">
-                    <div class="row">
-                        <div class="col-md-12 col-lg-6 d-xl-flex align-items-xl-center">
-                            <div class="focus-content mb-20">
-                                <h3  class="c-title">
-                                    Wha
-                                </h3>
-                                <p>
-                                    Time research & innovation is a research organisation based in the United Kingdom and
-                                    Bangladesh. We have started various research in behavioural computer sciences;
-                                    technology,
-                                    health informatics, education and community. Our supreme emphasis is to execute
-                                    research,
-                                    training and development activities initially in the UK and Bangladesh to help
-                                    disadvantaged
-                                    people. Our Chair and CEO Shah Siddiqui is currently working on ‘ANGTHAS’ an
-                                    Artificial
-                                    Intelligence and Machine Learning project as his PhD research at the University of
-                                    Portsmouth, UK......
-                                </p>
-                                <div class="btn-20">
-                                    <a href="project.html" class="cmn-btn-blue">View Projects</a>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-6">
-                            <div class="focus-items ">
-                                <img src="assets/img/slider/focus1.png" alt="focus1" loading="lazy">
-
-                                <div class="focus-popup">
-                                        <div class="pop_up_item">
-                                            <img  src="assets/img/slider/focus2.png" alt="focus2" loading="lazy">
-                                            <div class="video-p">
-                                                <a class="videos-icon radious-icon" href="https://www.youtube.com/watch?v=Fzu_gMLk55A">
-                                                    <i class="fas fa-play"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- row end -->
-                    <div class="row">
-                        <div class="col-md-12 col-lg-6 d-xl-flex align-items-xl-center">
-                            <div class="focus-content mb-20">
-                                <h3  class="c-title">
-                                    Wha
-                                </h3>
-                                <p>
-                                    Time research & innovation is a research organisation based in the United Kingdom and
-                                    Bangladesh. We have started various research in behavioural computer sciences;
-                                    technology,
-                                    health informatics, education and community. Our supreme emphasis is to execute
-                                    research,
-                                    training and development activities initially in the UK and Bangladesh to help
-                                    disadvantaged
-                                    people. Our Chair and CEO Shah Siddiqui is currently working on ‘ANGTHAS’ an
-                                    Artificial
-                                    Intelligence and Machine Learning project as his PhD research at the University of
-                                    Portsmouth, UK......
-                                </p>
-                                <div class="btn-20">
-                                    <a href="project.html" class="cmn-btn-blue">View Projects</a>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-6">
-                            <div class="focus-items ">
-                                <img src="assets/img/slider/focus1.png" alt="focus1" loading="lazy">
-
-                                <div class="focus-popup">
-                                        <div class="pop_up_item">
-                                            <img  src="assets/img/slider/focus2.png" alt="focus2" loading="lazy">
-                                            <div class="video-p">
-                                                <a class="videos-icon radious-icon" href="https://www.youtube.com/watch?v=Fzu_gMLk55A">
-                                                    <i class="fas fa-play"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- row end -->
-                    <div class="row">
-                        <div class="col-md-12 col-lg-6 d-xl-flex align-items-xl-center">
-                            <div class="focus-content mb-20">
-                                <h3  class="c-title">
-                                    Wha
-                                </h3>
-                                <p>
-                                    Time research & innovation is a research organisation based in the United Kingdom and
-                                    Bangladesh. We have started various research in behavioural computer sciences;
-                                    technology,
-                                    health informatics, education and community. Our supreme emphasis is to execute
-                                    research,
-                                    training and development activities initially in the UK and Bangladesh to help
-                                    disadvantaged
-                                    people. Our Chair and CEO Shah Siddiqui is currently working on ‘ANGTHAS’ an
-                                    Artificial
-                                    Intelligence and Machine Learning project as his PhD research at the University of
-                                    Portsmouth, UK......
-                                </p>
-                                <div class="btn-20">
-                                    <a href="project.html" class="cmn-btn-blue">View Projects</a>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-6">
-                            <div class="focus-items ">
-                                <img src="assets/img/slider/focus1.png" alt="focus1" loading="lazy">
-
-                                <div class="focus-popup">
-                                        <div class="pop_up_item">
-                                            <img  src="assets/img/slider/focus2.png" alt="focus2" loading="lazy">
-                                            <div class="video-p">
-                                                <a class="videos-icon radious-icon" href="https://www.youtube.com/watch?v=Fzu_gMLk55A">
-                                                    <i class="fas fa-play"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- row end -->
-                 
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- about end -->
-
-    <!-- service start -->
-    <section class="service sec-padding-top">
-
-        <div class="container position-relative">
-            <div class="text-end dots-img">
-                <img src="assets/img/icons/dots.png" alt="dots">
-            </div>
-
-            <div class="heading">
-                <h2 class="s-heading">
-                    Services
-                </h2>
-                <h4 class="s-sub-heading">
-                    We Are Provide <span class="s-sub-c"> Best Service For You</span>
-                </h4>
-            </div> <!-- heading end -->
-
-
-            <div class="mt-50 service-wrapper">
-
-                <div class="row justify-content-center">
-                    <div class="col-md-4 mb-25">
-                        <div class="service-item">
-                            <div class="overlay1 service-content box_shadow">
-                               <div>
-                                    <img src="assets/img/service/service1.png" alt="service1" loading="lazy">
-                               </div>
-                                   
-                                    <a href="research.html" class="c-title">
-                                        Research
+        <!-- banner-slider start -->
+        <section class="gallery-slider ">
+            <div class="banner com-banner  overlay" data-background="assets/img/gallery/gallery-banner.png">
+                <div class="container">
+                    <div class="banner-heading text-center">
+                        <h1 class="banner-title">
+                            <span>Welcome To</span> Time research & innovation
+                        </h1>
+                        <p class="t18 text-white">
+                            We are best in Research
+                        </p>
+                        <div class="mt-25 text-center">
+                            <div class="d-inline-block">
+                                <div class="video-p pr">
+                                    <a class="videos-icon radious-icon br-none" href="https://www.youtube.com/watch?v=Fzu_gMLk55A">
+                                        <img src="assets/img/icons/play-circle.png" alt="play">
                                     </a>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="col-md-4 mb-25">
-                        <div class="service-item">
-                            <div class="overlay1 service-content box_shadow">
-                                <div>
-                                     <img src="assets/img/service/service2.png" alt="service12" loading="lazy">
                                 </div>
-                            
-                             
-                                <a href="development.html" class="c-title">
-                                    Development
-                                </a>
-                           
-
                             </div>
                         </div>
-                        
                     </div>
-                   
-                </div><!-- row end -->
-                <div class="row justify-content-center">
-                    <div class="col-md-4 mb-25">
-                        <div class="service-item">
-                            <div class="overlay1 service-content box_shadow">
-                                <div>
-                                    <img src="assets/img/service/service3.png" alt="service3" loading="lazy">
-                                </div>
-
-                                <a href="broadcasting.html" class="c-title">
-                                    Broadcasting
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <div class="col-md-4 mb-25">
-                        <div class="service-item">
-                            <div class="overlay1 service-content box_shadow">
-                                <div>
-                                    <img src="assets/img/service/service4.png" alt="service4" loading="lazy">
-                                </div>
-
-
-                                <a href="education.html" class="c-title">
-                                    Education
-                                </a>
-
-
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-md-4 mb-25">
-                        <div class="service-item">
-                            <div class="overlay1 service-content box_shadow">
-                                <div>
-                                    <img src="assets/img/service/service5.png" alt="service5" loading="lazy">
-                                </div>
-                                <a href="automation.html" class="c-title">
-                                    Automation
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div><!-- row end -->
-
-                <div class="col-md-12 mt-20 text-center">
-                    <a href="service.html" class="more-btn c-title"> More services</a>
                 </div>
+            </div>
+            <!-- banner end -->
 
-                <div class="text-end dots-img-3">
-                    <img src="assets/img/icons/dots.png" alt="dots">
+        </section>
+        <!-- banner-slider end -->
+        <!-- gallery start -->
+        <section class="gallery  sec-padding-top">
+            <div class="container position-relative">
+
+                <div class="heading">
+                    <h2 class="s-heading">
+                        OUR ALL EVENT PHOTOS
                 </div>
+                <!-- heading end -->
+
+                <div class=" gallery-wrapper">
+                    <div class="col-md-12 mb-20 text-end">
+                        <div class="team-select">
+                            <select name="" id="" class="com-select form-contorl c-title">
+                                <option value="1">
+                                    All Event
+                                </option>
+                                <option value="2">
+                                    Event
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-3 mb-25">
+                            <div class="gallery-item project-item overlay3 pr ">
+                                <div>
+                                    <img src="assets/img/gallery/gallery5.png" alt="gallery5" loading="lazy">
+                                </div>
+                                <div class="overlay-content">
+                                    <div class="con-content-w">
+                                        <div class="d-inline-block flex_basis">
+                                            <a href="gallery.html" class="radious-icon">
+                                                <i class="fas fa-long-arrow-alt-right"></i>
+                                            </a>
+                                        </div>
+
+                                        <div class="com-f">
+                                            <h3 class="title">Wha Event</h3>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- col-md-3 end -->
+                        <div class="col-md-3 mb-25">
+                            <div class="gallery-item project-item overlay3 pr ">
+                                <div>
+                                    <img src="assets/img/gallery/gallery6.png" alt="gallery6" loading="lazy">
+                                </div>
+                                <div class="overlay-content">
+                                    <div class="con-content-w">
+                                        <div class="d-inline-block flex_basis">
+                                            <a href="gallery.html" class="radious-icon">
+                                                <i class="fas fa-long-arrow-alt-right"></i>
+                                            </a>
+                                        </div>
+
+                                        <div class="com-f">
+                                            <h3 class="title">Wha Event</h3>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- col-md-3 end -->
+                        <div class="col-md-3 mb-25">
+                            <div class="gallery-item project-item overlay3 pr ">
+                                <div>
+                                    <img src="assets/img/gallery/gallery7.png" alt="gallery7" loading="lazy">
+                                </div>
+                                <div class="overlay-content">
+                                    <div class="con-content-w">
+                                        <div class="d-inline-block flex_basis">
+                                            <a href="gallery.html" class="radious-icon">
+                                                <i class="fas fa-long-arrow-alt-right"></i>
+                                            </a>
+                                        </div>
+
+                                        <div class="com-f">
+                                            <h3 class="title">Wha Event</h3>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- col-md-3 end -->
+                        <div class="col-md-3 mb-25">
+                            <div class="gallery-item project-item  overlay3 pr ">
+                                <div>
+                                    <img src="assets/img/gallery/gallery8.png" alt="gallery8" loading="lazy">
+                                </div>
+                                <div class="overlay-content">
+                                    <div class="con-content-w">
+                                        <div class="d-inline-block flex_basis">
+                                            <a href="gallery.html" class="radious-icon">
+                                                <i class="fas fa-long-arrow-alt-right"></i>
+                                            </a>
+                                        </div>
+
+                                        <div class="com-f">
+                                            <h3 class="title">Wha Event</h3>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- col-md-3 end -->
+                        <div class="col-md-3 mb-25">
+                            <div class="gallery-item project-item  overlay3 pr ">
+                                <div>
+                                    <img src="assets/img/gallery/gallery9.png" alt="gallery9" loading="lazy">
+                                </div>
+                                <div class="overlay-content">
+                                    <div class="con-content-w">
+                                        <div class="d-inline-block flex_basis">
+                                            <a href="gallery.html" class="radious-icon">
+                                                <i class="fas fa-long-arrow-alt-right"></i>
+                                            </a>
+                                        </div>
+
+                                        <div class="com-f">
+                                            <h3 class="title">Wha Event</h3>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- col-md-3 end -->
+                        <div class="col-md-3 mb-25">
+                            <div class="gallery-item project-item  overlay3 pr ">
+                                <div>
+                                    <img src="assets/img/gallery/gallery10.png" alt="gallery10" loading="lazy">
+                                </div>
+                                <div class="overlay-content">
+                                    <div class="con-content-w">
+                                        <div class="d-inline-block flex_basis">
+                                            <a href="gallery.html" class="radious-icon">
+                                                <i class="fas fa-long-arrow-alt-right"></i>
+                                            </a>
+                                        </div>
+
+                                        <div class="com-f">
+                                            <h3 class="title">Wha Event</h3>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- col-md-3 end -->
+                        <div class="col-md-3 mb-25">
+                            <div class="gallery-item project-item  overlay3 pr ">
+                                <div>
+                                    <img src="assets/img/gallery/gallery11.png" alt="gallery11" loading="lazy">
+                                </div>
+                                <div class="overlay-content">
+                                    <div class="con-content-w">
+                                        <div class="d-inline-block flex_basis">
+                                            <a href="gallery.html" class="radious-icon">
+                                                <i class="fas fa-long-arrow-alt-right"></i>
+                                            </a>
+                                        </div>
+
+                                        <div class="com-f">
+                                            <h3 class="title">Wha Event</h3>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- col-md-3 end -->
+                        <div class="col-md-3 mb-25">
+                            <div class="gallery-item project-item  overlay3 pr ">
+                                <div>
+                                    <img src="assets/img/gallery/gallery12.png" alt="gallery12" loading="lazy">
+                                </div>
+                                <div class="overlay-content">
+                                    <div class="con-content-w">
+                                        <div class="d-inline-block flex_basis">
+                                            <a href="gallery.html" class="radious-icon">
+                                                <i class="fas fa-long-arrow-alt-right"></i>
+                                            </a>
+                                        </div>
+
+                                        <div class="com-f">
+                                            <h3 class="title">Wha Event</h3>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- col-md-3 end -->
+
+                    </div>
+                    <!-- row end -->
+
+
+                    <div class="col-md-12 mt-20 text-center">
+                        <a href="#" class="more-btn c-title">See More</a>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!-- gallery end -->
+
+    </main>
+    <!-- footer start -->
+    <footer id="footer">
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-xl-4">
+                        <div class="footer-l">
+                            <div class="footer-logo">
+                                <a href="index.html">
+                                    <img src="assets/img/logo/f-logo.png" alt="logo">
+                                </a>
+                            </div>
+                            <div class="fo-con">
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
+                            </div>
+                            <div class="f-s-icon">
+                                <a href="#" class="so-f">
+                                    <img src="assets/img/icons/facebook.png" alt="facebook">
+                                </a>
+                                <a href="#" class="so-t">
+                                    <img src="assets/img/icons/twitter.png" alt="twitter">
+                                </a>
+                                <a href="#" class="so-i">
+                                    <img src="assets/img/icons/linkedin.png" alt="linkedin">
+                                </a>
+                                <a href="#" class="so-l">
+                                    <img src="assets/img/icons/instragram.png" alt="instragram">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-xl-8">
+                        <div class="f-link">
+                            <div class="f-link-h">
+                                <h4 class="s-sub-heading">
+                                    <span class="s-sub-c">Pages </span>
+                                </h4>
+                                <ul class="mt-60">
+                                    <li>
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="about.html">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="services.html">Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="project.html">Projects</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="f-link-h">
+                                <h4 class="s-sub-heading">
+                                    <span class="s-sub-c">Useful Links </span>
+                                </h4>
+                                <ul class="mt-60">
+                                    <li>
+                                        <a href="privacy.html">Privacy Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="condition.html">Terms & Conditions</a>
+                                    </li>
+                                    <li>
+                                        <a href="login.html">Login</a>
+                                    </li>
+                                    <li>
+                                        <a href="career.html">Career</a>
+                                    </li>
+                                    <li>
+                                        <a href="testimonial.html">Testimonials</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="f-link-h">
+                                <h4 class="s-sub-heading">
+                                    <span class="s-sub-c">Contact Info.</span>
+                                </h4>
+                                <div class="mt-60">
+                                    <div class="contact-info-f grid-2">
+                                        <div>
+                                            <div class="f-icons-f">
+                                                <img src="assets/img/icons/location.png" alt="location">
+                                                <p>
+                                                    <span>
+                                                Bangladesh <br>
+                                                East Rampura,Khilgaon<br>
+                                                Dhaka,1219</span>
+                                                </p>
+                                            </div>
+                                            <div class="f-icons-f">
+                                                <img src="assets/img/icons/phone-line.png" alt="phone-line">
+                                                <p>
+                                                    <a href="tel:+88 (0) 174 396 6200">+88 (0) 174 396 6200</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="f-icons-f">
+                                                <img src="assets/img/icons/location.png" alt="location">
+                                                <p>
+                                                    <span>
+                                            United Kingdom<br>
+                                            189 Foundry Lane<br>
+                                            Southampton SO153JZ</span>
+                                                </p>
+                                            </div>
+                                            <div class="f-icons-f pb-1">
+                                                <img src="assets/img/icons/phone-line.png" alt="phone-line">
+                                                <p>
+                                                    <a href="tel:+44 (0) 238 052 8262">+44 (0) 238 052 8262</a><br>
+                                                </p>
+                                            </div>
+                                            <div class="f-icons-f">
+                                                <img src="assets/img/icons/phone-line.png" alt="phone-line">
+                                                <p>
+                                                    <a href="tel:+44 (0) 238 052 8262">+44 (0) 238 052 8262</a><br>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="subscribes-f">
+                                    <h4 class="s-sub-heading text-start pt-2 pb-3">
+                                        <span class="s-sub-c">Subscribe Us</span>
+                                    </h4>
+                                    <form class="subs-d">
+                                        <input name="email" class="form-control" type="email" autocorrect="off" autocapitalize="off" placeholder="Enter Your Email">
+                                        <button type="submit" class="cmn-btn-blue btn-green">Subscribe</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright text-center">
+                    <p>Copyright 2021 <i class="fas fa-copyright"></i> <a href="index.html">Timerni.com</a> All Rights Reserved
+                    </p>
+                </div>
+            </div>
+            <div class="f-bottom-img">
+                <img src="assets/img/footer-bg.png" alt="footer" loading="lazy">
             </div>
         </div>
-    </section>
-    <!-- service end -->
-
-    <!-- project start -->
-     <section class="project  sec-padding-top">
-         <div class="container position-relative">
-             <div class="text-end dots-img">
-                 <img src="assets/img/icons/dots.png" alt="dots">
-             </div>
-
-             <div class="heading">
-                 <h2 class="s-heading">
-                     Our Projects
-                 </h2>
-                 <h4 class="s-sub-heading">
-                     We Are Provide <span class="s-sub-c"> Best Projects For You</span>
-                 </h4>
-             </div> <!-- heading end -->
-
-             <div class="mt-50 project-wrapper">
-                 <div class="col-md-12 mt-20 mb-20 text-end">
-                    <a href="project.html" class="more-btn c-title">
-                         <span class="pe-1"> More Projects </span> <i class="fas fa-arrow-right"></i>
-                    </a>
-                 </div>
-
-                 <div class="row justify-content-center">
-                     <div class="col-md-6 mb-25">
-                         <div class="project-item overlay3 pr ">
-                             <div class="bg-overlay brand-overlay"></div>
-                             <div>
-                                 <img src="assets/img/project/project1.png" alt="project1" loading="lazy">
-                             </div>
-                             <div class="overlay-content">
-                                 <div class="con-content-w">
-                                     <div class="d-inline-block flex_basis">
-                                        <a href="project.html" class="radious-icon">
-                                            <i class="fas fa-long-arrow-alt-right"></i>
-                                        </a>
-                                     </div>
-                                    
-                                    <div class="com-f">
-                                        <h3 class="title">ONGOING</h3>
-                                        <p class="c-title">
-                                          Theme Shaper
-                                        </p>
-                                        <p class="t14">Work is our main goal</p>
-                                    </div>
-                                 </div>
-                                 
-                             </div>
-                         </div>
-                     </div><!-- col-md-6 end -->
-                     <div class="col-md-6 mb-25">
-                         <div class="project-item overlay3 pr ">
-                             <div>
-                                 <img src="assets/img/project/project2.png" alt="project2" loading="lazy">
-                             </div>
-                             <div class="overlay-content">
-                                 <div class="con-content-w">
-                                     <div class="d-inline-block flex_basis">
-                                        <a href="project.html" class="radious-icon">
-                                            <i class="fas fa-long-arrow-alt-right"></i>
-                                        </a>
-                                     </div>
-                                    
-                                    <div class="com-f">
-                                        <h3 class="title">ONGOING</h3>
-                                        <p class="c-title">
-                                          Theme Shaper
-                                        </p>
-                                        <p class="t14">Work is our main goal</p>
-                                    </div>
-                                 </div>
-                                 
-                             </div>
-                         </div>
-                     </div><!-- col-md-6 end -->
-                     <div class="col-md-6 mb-25">
-                         <div class="project-item overlay3 pr ">
-                             <div>
-                                 <img src="assets/img/project/project3.png" alt="project3" loading="lazy">
-                             </div>
-                             <div class="overlay-content">
-                                 <div class="con-content-w">
-                                     <div class="d-inline-block flex_basis">
-                                        <a href="project.html" class="radious-icon">
-                                            <i class="fas fa-long-arrow-alt-right"></i>
-                                        </a>
-                                     </div>
-                                    
-                                    <div class="com-f">
-                                        <h3 class="title">ONGOING</h3>
-                                        <p class="c-title">
-                                          Theme Shaper
-                                        </p>
-                                        <p class="t14">Work is our main goal</p>
-                                    </div>
-                                 </div>
-                                 
-                             </div>
-                         </div>
-                     </div><!-- col-md-6 end -->
-                     <div class="col-md-6 mb-25">
-                         <div class="project-item active overlay3 pr ">
-                             <div>
-                                 <img src="assets/img/project/project4.png" alt="project4" loading="lazy">
-                             </div>
-                             <div class="overlay-content">
-                                 <div class="con-content-w">
-                                     <div class="d-inline-block flex_basis">
-                                        <a href="project.html" class="radious-icon">
-                                            <i class="fas fa-long-arrow-alt-right"></i>
-                                        </a>
-                                     </div>
-                                    
-                                    <div class="com-f">
-                                        <h3 class="title">ONGOING</h3>
-                                        <p class="c-title">
-                                          Theme Shaper
-                                        </p>
-                                        <p class="t14">Work is our main goal</p>
-                                    </div>
-                                 </div>
-                                 
-                             </div>
-                         </div>
-                     </div><!-- col-md-6 end -->
-         
-                 </div><!-- row end -->
-  
-
-                 <div class="col-md-12 mt-20 text-center">
-                     <a href="service.html" class="more-btn c-title"> More services</a>
-                 </div>
-
-
-             </div>
-         </div>
-     </section>
-    <!-- project end -->
-
-    <!-- collaborator start -->
-    <section class="collaborator sec-padding-top">
-
-        <div class="container position-relative">
-            <div class="heading">
-                <h2 class="s-heading">
-                    COLLABORATORS
-                </h2>
-                <h4 class="s-sub-heading">
-                    We Have A Lot <span class="s-sub-c">Young Skillfull Member </span>
-                </h4>
-            </div> <!-- heading end -->
-            <div class="text-end">
-                <a href="collaborator.html" class="com-bor-btn">All</a>
-            </div>
-            <div class="mt-50 collaborator-wrapper">
-                <div class="row justify-content-center">
-                    <div class="col-md-10">
-                        <div class="collaborator-slider com-slider owl-carousel owl-theme">
-                            <div class="collaborator-items">
-                                <img src="assets/img/collaborator/collaborator1.png" alt="collaborator1" loading="lazy">
-                            </div>
-                            <div class="collaborator-items">
-                                <img src="assets/img/collaborator/collaborator2.png" alt="collaborator2" loading="lazy">
-                            </div>
-                            <div class="collaborator-items">
-                                <img src="assets/img/collaborator/collaborator3.png" alt="collaborator3" loading="lazy">
-                            </div>
-                            <div class="collaborator-items">
-                                <img src="assets/img/collaborator/collaborator4.png" alt="collaborator4" loading="lazy">
-                            </div>
-                                <div class="collaborator-items">
-                                    <img src="assets/img/collaborator/collaborator5.png" alt="collaborator5"
-                                        loading="lazy">
-                                </div>
-                                <div class="collaborator-items">
-                                    <img src="assets/img/collaborator/collaborator1.png" alt="collaborator1"
-                                        loading="lazy">
-                                </div>
-                                <div class="collaborator-items">
-                                    <img src="assets/img/collaborator/collaborator2.png" alt="collaborator2"
-                                        loading="lazy">
-                                </div>
-                                <div class="collaborator-items">
-                                    <img src="assets/img/collaborator/collaborator3.png" alt="collaborator3"
-                                        loading="lazy">
-                                </div>
-                                <div class="collaborator-items">
-                                    <img src="assets/img/collaborator/collaborator4.png" alt="collaborator4"
-                                        loading="lazy">
-                                </div>
-                                <div class="collaborator-items">
-                                    <img src="assets/img/collaborator/collaborator5.png" alt="collaborator5"
-                                        loading="lazy">
-                                </div>
-                        </div>
-                    </div>
-                </div>
-            </div> <!-- div end -->
-        </div>
-
-    </section>
-    <!-- collaborator end -->
-
-    <!-- team-member start -->
-    <section class="team-member sec-padding-top">
-
-        <div class="container position-relative">
-            <div class="heading">
-                <h2 class="s-heading">
-                    TEAM MEMBER
-                </h2>
-                <h4 class="s-sub-heading">
-                    We Have A Lot <span class="s-sub-c">Young Skillfull Member </span>
-                </h4>
-            </div> <!-- heading end -->
-            <div class="d-lg-flex align-items-center justify-content-lg-between mt-25">
-                <div>
-                    <p class="c-title">Please make this puzzle or <a href="#">Skip</a> </p>
-                </div>
-                <div>
-                    <select name="" id="" class="team-select form-contorl c-title">
-                        <option value="1">
-                            Department
-                        </option>
-                        <option value="2">
-                            Research
-                        </option>
-                    </select>
-                </div>
-            </div>
-            <div class="mt-50 team-wrapper">
-                <div class="row justify-content-center">
-                    <div class="col-md-12">
-                        <img src="assets/img/team/team1.png" alt="team1" loading="lazy">
-
-                        <div class="mt-25 text-end">
-                            <a href="#" class="com-bor-btn done-btn">Done</a>
-                        </div>
-                        <div class="mt-20 text-center">
-                            <a href="team.html" class="more-btn c-title">See All Member</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="text-end dots-img-3">
-                    <img src="assets/img/icons/dots.png" alt="dots">
-                </div>
-            </div> <!-- div end -->
-        </div>
-
-    </section>
-    <!-- team-member end -->
-
-    <!-- gallery start -->
-    <section class="gallery  sec-padding-top">
-        <div class="container position-relative">
-            <div class="text-end dots-img">
-                <img src="assets/img/icons/dots.png" alt="dots">
-            </div>
-
-            <div class="heading">
-                <h2 class="s-heading">
-                    Our Projects
-                </h2>
-                <h4 class="s-sub-heading">
-                    We Are Provide <span class="s-sub-c"> Best Projects</span>
-                </h4>
-            </div> <!-- heading end -->
-
-            <div class="mt-50 project-wrapper">
-                <div class="col-md-12 mt-20 mb-20 text-end">
-                    <a href="gallery.html" class="more-btn c-title">
-                        <span class="pe-1">VIEW ALL PHOTOS</span> <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <div class="row justify-content-center">
-                    <div class="col-md-6 mb-25">
-                        <div class="project-item overlay3 pr ">
-                            <div class="bg-overlay brand-overlay"></div>
-                            <div>
-                                <img src="assets/img/project/project1.png" alt="project1" loading="lazy">
-                            </div>
-                            <div class="overlay-content">
-                                <div class="con-content-w">
-                                    <div class="d-inline-block flex_basis">
-                                        <a href="project.html" class="radious-icon">
-                                            <i class="fas fa-long-arrow-alt-right"></i>
-                                        </a>
-                                    </div>
-
-                                    <div class="com-f">
-                                        <h3 class="title">ONGOING</h3>
-                                        <p class="c-title">
-                                            Theme Shaper
-                                        </p>
-                                        <p class="t14">Work is our main goal</p>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div><!-- col-md-6 end -->
-                    <div class="col-md-6 mb-25">
-                        <div class="project-item overlay3 pr ">
-                            <div>
-                                <img src="assets/img/project/project2.png" alt="project2" loading="lazy">
-                            </div>
-                            <div class="overlay-content">
-                                <div class="con-content-w">
-                                    <div class="d-inline-block flex_basis">
-                                        <a href="project.html" class="radious-icon">
-                                            <i class="fas fa-long-arrow-alt-right"></i>
-                                        </a>
-                                    </div>
-
-                                    <div class="com-f">
-                                        <h3 class="title">ONGOING</h3>
-                                        <p class="c-title">
-                                            Theme Shaper
-                                        </p>
-                                        <p class="t14">Work is our main goal</p>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div><!-- col-md-6 end -->
-                    <div class="col-md-6 mb-25">
-                        <div class="project-item overlay3 pr ">
-                            <div>
-                                <img src="assets/img/project/project3.png" alt="project3" loading="lazy">
-                            </div>
-                            <div class="overlay-content">
-                                <div class="con-content-w">
-                                    <div class="d-inline-block flex_basis">
-                                        <a href="project.html" class="radious-icon">
-                                            <i class="fas fa-long-arrow-alt-right"></i>
-                                        </a>
-                                    </div>
-
-                                    <div class="com-f">
-                                        <h3 class="title">ONGOING</h3>
-                                        <p class="c-title">
-                                            Theme Shaper
-                                        </p>
-                                        <p class="t14">Work is our main goal</p>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div><!-- col-md-6 end -->
-                    <div class="col-md-6 mb-25">
-                        <div class="project-item active overlay3 pr ">
-                            <div>
-                                <img src="assets/img/project/project4.png" alt="project4" loading="lazy">
-                            </div>
-                            <div class="overlay-content">
-                                <div class="con-content-w">
-                                    <div class="d-inline-block flex_basis">
-                                        <a href="project.html" class="radious-icon">
-                                            <i class="fas fa-long-arrow-alt-right"></i>
-                                        </a>
-                                    </div>
-
-                                    <div class="com-f">
-                                        <h3 class="title">ONGOING</h3>
-                                        <p class="c-title">
-                                            Theme Shaper
-                                        </p>
-                                        <p class="t14">Work is our main goal</p>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div><!-- col-md-6 end -->
-
-                </div><!-- row end -->
-
-
-                <div class="col-md-12 mt-20 text-center">
-                    <a href="service.html" class="more-btn c-title"> More services</a>
-                </div>
-
-
-            </div>
-        </div>
-    </section>
-    <!-- gallery end -->
-
-    <!-- header start -->
-    <!-- header end -->
-
-    <!-- header start -->
-    <!-- header end -->
-    <!-- header start -->
-    <!-- header end -->
-    <!-- header start -->
-    <!-- header end -->
-    <div class="col-md-12">
-                         <div class="text-end dots-img-3">
-                             <img src="assets/img/icons/dots.png" alt="dots">
-                         </div>
-                         <div class="arrow-icon">
-                             <li> <span>sdafsfd</span> </li>
-                             <i class="fas fa-long-arrow-alt-right"></i>
-                         </div>
-    </div>
+    </footer>
+    <!-- footer end -->
 
     <!--=== All Plugin ===-->
     <!--============= Jquery-3.6.0 =============-->
@@ -953,14 +538,11 @@
     <!--=== Bootstrap 5 js ===-->
     <script src="assets/js/bootstrap.min.js"></script>
     <!--=== owl carousel ===-->
-    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
-     <!--=== magnific-popup ===-->
-     <script type="text/javascript" src="assets/js/magnific-popup.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!--=== magnific-popup ===-->
+    <script src="assets/js/magnific-popup.min.js"></script>
     <!--=== Main js ===-->
     <script src="assets/js/main.js"></script>
-    <script>
-        new WOW().init();
-    </script>
 
 </body>
 
