@@ -98,6 +98,9 @@ $(document).ready(function($) {
         margin: 30,
         responsive: {
             0: {
+                items: 1,
+            },
+            576: {
                 items: 2,
             },
             768: {
@@ -134,7 +137,7 @@ $(document).ready(function($) {
             992: {
                 items: 1,
             },
-            1399: {
+            1300: {
                 items: 2,
             },
 
@@ -167,6 +170,7 @@ $(document).ready(function($) {
     $('.apply-items').hover(function() {
         $(this).toggleClass('active');
     });
+
 
 
 

@@ -2,11 +2,20 @@
     .broadc-m {
         margin-top: -250px;
     }
+    .focus-items>.focus-popup {
+        margin-right: -10%;
+    }
+    .news .news-content {
+        min-height: 350px;
+    }
 }
 
 @media (min-width: 1199px) and (max-width: 1367px) {
     .s-heading {
         font-size: 35px;
+    }
+    .news .news-content {
+        min-height: 350px;
     }
 }
 
@@ -184,6 +193,11 @@
     .com-bor-btn,
     .cmn-btn-blue {
         font-size: 12px;
+    }
+    /* about */
+    .broadcasting-img,
+    .about-img {
+        text-align: center;
     }
     /* testimonial */
     .testimonial .testimonial-slider.owl-carousel {

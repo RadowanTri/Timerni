@@ -46,12 +46,13 @@
     position: relative;
     transform: scale(1.2);
     margin-top: 50px;
+    display: none;
 }
 
-.apply-items.active .apply-content,
-.apply-items:hover .apply-content {
+.apply-items.active .apply-content {
     visibility: visible;
     opacity: 1;
+    display: block;
 }
 
 .apply-items .item-h img {
@@ -59,8 +60,7 @@
     width: 100%;
 }
 
-.apply-items.active .item-h img,
-.apply-items:hover .item-h img {
+.apply-items.active .item-h img {
     transform: scale(1.2);
 }
 
@@ -68,8 +68,7 @@
     position: relative;
 }
 
-.apply-items.active .overlay1::after,
-.apply-items:hover .overlay1::after {
+.apply-items.active .overlay1::after {
     opacity: 1;
     z-index: 1;
     transform: scale(1.2);
