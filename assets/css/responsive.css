@@ -14,6 +14,23 @@
     .s-heading {
         font-size: 35px;
     }
+    .title {
+        font-size: 24px;
+        padding-bottom: 25px;
+    }
+    .c-title {
+        font-size: 17px;
+        padding-bottom: 10px;
+    }
+    .radious-icon {
+        height: 50px;
+        width: 50px;
+    }
+    .con-content-w>.flex_basis {
+        flex-basis: 70px;
+        max-width: 70px;
+        margin-right: 5px;
+    }
     .news .news-content {
         min-height: 350px;
     }
