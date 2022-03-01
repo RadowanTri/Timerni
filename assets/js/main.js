@@ -167,10 +167,13 @@ $(document).ready(function($) {
         }
     });
     // ambassador
-    $('.apply-items').hover(function() {
-        $(this).toggleClass('active');
-    });
 
+    $(function() {
+        $(".apply-items").click(function() {
+            $(".apply-items.active").removeClass("active");
+            $(this).addClass("active");
+        });
+    });
 
 
 

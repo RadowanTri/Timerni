@@ -1116,9 +1116,12 @@ Last change:    26/01/22 [fixed Float bug, vf]
         color: var(--s-primary-color);
     }
     
+    .others-service a.cmn-btn-blue.c-title:hover,
     .cmn-btn-blue:hover,
-    .cmn-btn-white :hover {
-        color: var(--white);
+    .cmn-btn-white:hover,
+    .cmn-btn-white:focus,
+    .cmn-btn-blue:focus {
+        color: var(--white) !important;
     }
     
     .com-select {
@@ -1174,6 +1177,10 @@ Last change:    26/01/22 [fixed Float bug, vf]
     
     .text-color {
         color: var(--text-color);
+    }
+    
+    .text-justify {
+        text-align: justify;
     }
     /* grid-wrap */
     /* font-family: 'Lato',sans-serif; */
@@ -1598,7 +1605,7 @@ Last change:    26/01/22 [fixed Float bug, vf]
     }
     
     .header-area .navbar-brand>img {
-        height: 65px;
+        height: 55px;
     }
     
     .header-area .navbar .navbar-nav .nav-item {

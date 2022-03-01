@@ -59,13 +59,12 @@
     -o-border-radius: 7px;
 }
 
-
-/* .focus-items>.focus-popup {
+.focus-items>.focus-popup {
     position: relative;
     margin-right: -5%;
     margin-top: -30%;
     display: inline-block;
-} */
+}
 
 .focus-slider.owl-theme .owl-dots .owl-dot span {
     width: 10px;
@@ -469,7 +468,7 @@
 
 /*
 ==========================================
-   15. header CSS
+   15. sign CSS
 ==========================================
 */
 
@@ -556,7 +555,7 @@
     transform: rotate(45deg);
 }
 
-form i {
+.contact-form i {
     margin-left: -30px;
     cursor: pointer;
 }
@@ -567,4 +566,38 @@ form i {
     margin-top: -25px;
     position: relative;
     z-index: 2;
+}
+
+
+/* Modal */
+
+.modal-form .con-contetnt h4 {
+    color: red;
+    padding-top: 15px;
+}
+
+.modal-form .contact-form {
+    background: var(--s-primary-color);
+    padding: 25px 20px;
+}
+
+.modal-form .contact-form label {
+    margin-bottom: 0px;
+}
+
+.modal-form .contact-form label span {
+    color: red;
+    font-size: 18px;
+}
+
+.modal-form .contact-form .form-control {
+    border: none;
+}
+
+.modal-form .contact-form [class*=col-] {
+    margin-bottom: 10px;
+}
+
+.modal-form .modal-content {
+    padding: 0px;
 }
