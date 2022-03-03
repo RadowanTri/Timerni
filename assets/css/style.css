@@ -58,7 +58,9 @@
     -ms-border-radius: 7px;
     -o-border-radius: 7px;
 }
-
+.focus-slider .owl-dots {
+    text-align: center;
+}
 .focus-items>.focus-popup {
     position: relative;
     margin-right: -5%;
