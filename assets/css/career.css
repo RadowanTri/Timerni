@@ -110,6 +110,9 @@
 .cv-clinic-content li p {
     overflow: hidden;
 }
+.cv-btn .com-bor-btn:hover {
+    color: var(--s-primary-color);
+}
 
 
 /* job */
