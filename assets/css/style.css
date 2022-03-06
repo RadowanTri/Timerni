@@ -58,9 +58,11 @@
     -ms-border-radius: 7px;
     -o-border-radius: 7px;
 }
+
 .focus-slider .owl-dots {
     text-align: center;
 }
+
 .focus-items>.focus-popup {
     position: relative;
     margin-right: -5%;
@@ -202,6 +204,26 @@
     color: var(--white);
     border-radius: 5px;
     padding: 5px 10px;
+}
+
+.team-wrapper .team-member-service {
+    padding: 25px;
+}
+
+.team-member-service .facebook {
+    color: #3b5998
+}
+
+.team-member-service .google {
+    color: #dc4e41
+}
+
+.team-member-service .linkedin {
+    color: #0077b5
+}
+
+.team-member-service .twitter {
+    color: #55acee
 }
 
 .done-btn {
