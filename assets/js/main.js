@@ -166,6 +166,28 @@ $(document).ready(function($) {
             },
         }
     });
+    var $reviewSlider = $(".review-carousel");
+    $reviewSlider.owlCarousel({
+        loop: true,
+        nav: false,
+        dots: true,
+        autoplay: false,
+        margin: 30,
+        responsive: {
+            0: {
+                items: 2,
+            },
+            768: {
+                items: 2,
+            },
+            992: {
+                items: 3,
+            },
+            1399: {
+                items: 5,
+            },
+        }
+    });
     // ambassador
 
     $(function() {
@@ -173,6 +195,10 @@ $(document).ready(function($) {
             $(".apply-items.active").removeClass("active");
             $(this).addClass("active");
         });
+    });
+
+    $('#myModal').on('show.bs.modal', function() {
+        owl.trigger('owl.stop');
     });
 
 
